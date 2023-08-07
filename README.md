@@ -20,7 +20,7 @@ use { "devCote/wallbox.nvim" }
 Using `lazy.nvim`
 
 ```lua
-{ "devCote/wallbox.nvim", priority = 1000 }
+{ "devCote/wallbox.nvim" }
 ```
 
 # Basic Usage
