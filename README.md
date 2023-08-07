@@ -7,6 +7,8 @@
 
 Neovim 0.8.0+
 
+Pywal
+
 # Installing
 
 Using `packer`
@@ -15,13 +17,13 @@ Using `packer`
 use { "devCote/wallbox.nvim" }
 ```
 
-Using `lazy.nvim`
+Using `lazy`
 
 ```lua
-{ "devCote/wallbox.nvim", priority = 1000 }
+{ "devCote/wallbox.nvim" }
 ```
 
-# Basic Usage
+# Usage
 
 Inside `init.vim`
 
