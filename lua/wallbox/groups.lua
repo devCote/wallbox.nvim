@@ -40,6 +40,7 @@ M.setup = function()
     wallboxBg3 = { fg = colors.bg3 },
     wallboxBg4 = { fg = colors.bg4 },
     wallboxRed = { fg = colors.red },
+    lspWarning = { fg = "#2aaaa9" },
     wallboxRedBold = { fg = colors.red, bold = config.bold },
     wallboxGreen = { fg = colors.green },
     wallboxGreenBold = { fg = colors.green, bold = config.bold },
@@ -161,7 +162,7 @@ M.setup = function()
     SpellRare = { link = "wallboxPurpleUnderline" },
     Whitespace = { fg = colors.bg2 },
     -- LSP Diagnostic
-    DiagnosticError = { link = "{ fg = '#9d0006' }" },
+    DiagnosticError = { link = "lspWarning" },
     DiagnosticSignError = { link = "wallboxRedSign" },
     DiagnosticUnderlineError = { link = "wallboxRedUnderline" },
     DiagnosticWarn = { link = "wallboxYellow" },
