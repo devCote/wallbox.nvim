@@ -1,7 +1,7 @@
-# WALLBOX - awesome theme for nvim using pywal colors
-
-!example1_image (https://github.com/devCote/wallbox.nvim/example/1ex.png?raw=true)
-!example2_image (https://github.com/devCote/wallbox.nvim/example/2ex.png?raw=true)
+# WALLBOX 
+### awesome theme for nvim using pywal colors
+![1ex](https://github.com/devCote/wallbox.nvim/assets/32065068/a36d41c1-e890-4299-aa61-4867c1cc181c)
+![2ex](https://github.com/devCote/wallbox.nvim/assets/32065068/97146214-3d94-403d-8d03-e2f4964e38f2)
 
 # Prerequisites
 
@@ -26,18 +26,20 @@ Using `lazy.nvim`
 Inside `init.vim`
 
 ```vim
-set background=dark " or light if you want light mode
 colorscheme wallbox
+" optional
+vim.o.background = "dark" " or "light" for light mode
 ```
-
 Inside `init.lua`
 
 ```lua
-vim.o.background = "dark" -- or "light" for light mode
 vim.cmd([[colorscheme wallbox]])
+-- optional
+vim.o.background = "dark" -- or "light" for light mode
 ```
 
-# Configuration
+
+# Configurations
 
 Additional settings for wallbox are:
 
@@ -68,43 +70,3 @@ require("wallbox").setup({
 })
 vim.cmd("colorscheme wallbox")
 ```
-
-## Overriding
-
-### Palette
-
-You can specify your own palette colors. For example:
-
-```lua
-require("wallbox").setup({
-    palette_overrides = {
-        bright_green = "#990000",
-    }
-})
-vim.cmd("colorscheme wallbox")
-```
-
-More colors in the [palette.lua](lua/wallbox/palette.lua) file
-
-### Highlight groups
-
-If you don't enjoy the current color for a specific highlight group, now you can just override it in the setup. For
-example:
-
-```lua
-require("wallbox").setup({
-    overrides = {
-        SignColumn = {bg = "#ff9900"}
-    }
-})
-vim.cmd("colorscheme wallbox")
-```
-
-Please note that the override values must follow the attributes from the highlight group map, such as:
-
-- **fg** - foreground color
-- **bg** - background color
-- **bold** - true or false for bold font
-- **italic** - true or false for italic font
-
-Other values can be seen in `:h synIDattr`
