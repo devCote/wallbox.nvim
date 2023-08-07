@@ -6,6 +6,7 @@
 # Prerequisites
 
 Neovim 0.8.0+
+Pywal
 
 # Installing
 
