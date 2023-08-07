@@ -161,7 +161,7 @@ M.setup = function()
     SpellRare = { link = "wallboxPurpleUnderline" },
     Whitespace = { fg = colors.bg2 },
     -- LSP Diagnostic
-    DiagnosticError = { link = { fg = "#9d0006" } },
+    DiagnosticError = { link = "{ fg = '#9d0006' }" },
     DiagnosticSignError = { link = "wallboxRedSign" },
     DiagnosticUnderlineError = { link = "wallboxRedUnderline" },
     DiagnosticWarn = { link = "wallboxYellow" },
