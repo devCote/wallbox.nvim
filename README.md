@@ -17,13 +17,13 @@ Using `packer`
 use { "devCote/wallbox.nvim" }
 ```
 
-Using `lazy.nvim`
+Using `lazy`
 
 ```lua
 { "devCote/wallbox.nvim" }
 ```
 
-# Basic Usage
+# Usage
 
 Inside `init.vim`
 
