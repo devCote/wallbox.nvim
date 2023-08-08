@@ -40,7 +40,10 @@ M.setup = function()
     wallboxBg3 = { fg = colors.bg3 },
     wallboxBg4 = { fg = colors.bg4 },
     wallboxRed = { fg = colors.red },
-    lspWarning = { fg = "#2aaaa9" },
+    lspError = { fg = "#cc241d" },
+    lspWarn = { fg = "#fabd2f" },
+    lspInfo = { fg = "#8b7aea" },
+    lspHint = { fg = "#3c8bee" },
     wallboxRedBold = { fg = colors.red, bold = config.bold },
     wallboxGreen = { fg = colors.green },
     wallboxGreenBold = { fg = colors.green, bold = config.bold },
@@ -54,26 +57,26 @@ M.setup = function()
     wallboxAquaBold = { fg = colors.aqua, bold = config.bold },
     wallboxOrange = { fg = colors.orange },
     wallboxOrangeBold = { fg = colors.orange, bold = config.bold },
-    wallboxRedSign = config.transparent_mode and { fg = colors.red, reverse = config.invert_signs }
-      or { fg = colors.red, bg = colors.bg1, reverse = config.invert_signs },
+    wallboxRedSign = config.transparent_mode and { fg = "#cc241d", reverse = config.invert_signs }
+      or { fg = "#cc241d", bg = colors.bg1, reverse = config.invert_signs },
     wallboxGreenSign = config.transparent_mode and { fg = colors.green, reverse = config.invert_signs }
       or { fg = colors.green, bg = colors.bg1, reverse = config.invert_signs },
-    wallboxYellowSign = config.transparent_mode and { fg = colors.yellow, reverse = config.invert_signs }
-      or { fg = colors.yellow, bg = colors.bg1, reverse = config.invert_signs },
-    wallboxBlueSign = config.transparent_mode and { fg = colors.blue, reverse = config.invert_signs }
-      or { fg = colors.blue, bg = colors.bg1, reverse = config.invert_signs },
+    wallboxYellowSign = config.transparent_mode and { fg = "#fabd2f", reverse = config.invert_signs }
+      or { fg = "#fabd2f", bg = colors.bg1, reverse = config.invert_signs },
+    wallboxBlueSign = config.transparent_mode and { fg = "#8b7aea", reverse = config.invert_signs }
+      or { fg = "#8b7aea", bg = colors.bg1, reverse = config.invert_signs },
     wallboxPurpleSign = config.transparent_mode and { fg = colors.purple, reverse = config.invert_signs }
       or { fg = colors.purple, bg = colors.bg1, reverse = config.invert_signs },
-    wallboxAquaSign = config.transparent_mode and { fg = colors.aqua, reverse = config.invert_signs }
-      or { fg = colors.aqua, bg = colors.bg1, reverse = config.invert_signs },
+    wallboxAquaSign = config.transparent_mode and { fg = "#3c8bee", reverse = config.invert_signs }
+      or { fg = "#3c8bee", bg = colors.bg1, reverse = config.invert_signs },
     wallboxOrangeSign = config.transparent_mode and { fg = colors.orange, reverse = config.invert_signs }
       or { fg = colors.orange, bg = colors.bg1, reverse = config.invert_signs },
-    wallboxRedUnderline = { undercurl = config.undercurl, sp = colors.red },
+    wallboxRedUnderline = { undercurl = config.undercurl, sp = "#cc241d" },
     wallboxGreenUnderline = { undercurl = config.undercurl, sp = colors.green },
-    wallboxYellowUnderline = { undercurl = config.undercurl, sp = colors.yellow },
-    wallboxBlueUnderline = { undercurl = config.undercurl, sp = colors.blue },
+    wallboxYellowUnderline = { undercurl = config.undercurl, sp = "#fabd2f" },
+    wallboxBlueUnderline = { undercurl = config.undercurl, sp = "#8b7aea" },
     wallboxPurpleUnderline = { undercurl = config.undercurl, sp = colors.purple },
-    wallboxAquaUnderline = { undercurl = config.undercurl, sp = colors.aqua },
+    wallboxAquaUnderline = { undercurl = config.undercurl, sp = "#3c8bee" },
     wallboxOrangeUnderline = { undercurl = config.undercurl, sp = colors.orange },
     Normal = config.transparent_mode and { fg = colors.fg1, bg = nil } or { fg = colors.fg1, bg = colors.bg0 },
     NormalFloat = config.transparent_mode and { fg = colors.fg1, bg = nil } or { fg = colors.fg1, bg = colors.bg1 },
